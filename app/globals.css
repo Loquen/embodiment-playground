@@ -107,18 +107,7 @@
    Base Styles
    ============================================================ */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
 
@@ -130,6 +119,8 @@ body {
   line-height: var(--line-height-normal);
   font-weight: 400;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -137,12 +128,7 @@ body {
    Typography
    ============================================================ */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: var(--line-height-tight);
@@ -180,13 +166,13 @@ p {
   font-weight: 300;
 }
 
-a {
+main a {
   color: var(--color-accent);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
-a:hover {
+main a:hover {
   color: var(--color-text);
 }
 
